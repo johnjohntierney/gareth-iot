@@ -3,7 +3,7 @@ import { NativeBaseProvider, Text, View, Button } from "native-base";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from "./components/HomeScreen";
-import SecondScreen from "./components/SecondScreen";
+import DeviceScreen from "./components/DeviceScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +13,8 @@ function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="OtherScreen" component={SecondScreen} />
+          <Stack.Screen name="Devices" component={DeviceScreen} />
+          {/* <Stack.Screen name="OtherScreen" component={SecondScreen} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>
